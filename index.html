@@ -14,18 +14,12 @@
 
   <header class="site-header">
     <div class="container">
-      <p class="eyebrow">Game Collection</p>
-      <h1 class="page-title">웹게임 모음</h1>
-      <p class="page-lead">Claude와 함께 만든 브라우저 게임 모음이에요. 설치 없이 바로 플레이할 수 있어요.</p>
+      <h1 class="page-title">웹게임 모음 <span class="page-count" id="game-count"></span></h1>
+      <p class="page-lead">누르면 새 탭에서 바로 플레이할 수 있어요.</p>
     </div>
   </header>
 
   <main id="games" class="container" tabindex="-1">
-    <div class="section-head">
-      <h2 class="section-title">전체 게임</h2>
-      <p class="section-count" id="game-count" aria-live="polite"></p>
-    </div>
-
     <ul class="game-grid" id="game-list"></ul>
 
     <!-- 등록된 게임이 없을 때 -->
@@ -42,12 +36,6 @@
     </noscript>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>각 게임은 GitHub Pages로 배포되어 있어요. 플레이 버튼을 누르면 새 탭에서 열려요.</p>
-    </div>
-  </footer>
-
   <!-- 카드 템플릿: main.js가 복제해서 채웁니다 -->
   <template id="game-card-template">
     <li class="game-card">
@@ -60,17 +48,16 @@
           </div>
         </div>
         <div class="game-card__body">
-          <h3 class="game-card__title">
+          <h2 class="game-card__title">
             <a class="game-card__link" target="_blank" rel="noopener">
               <span class="game-card__name"></span>
               <span class="visually-hidden"> (새 탭에서 열림)</span>
             </a>
-          </h3>
+          </h2>
           <p class="game-card__desc"></p>
-          <ul class="game-card__tags" aria-label="태그"></ul>
           <div class="game-card__footer">
             <span class="game-card__platform"></span>
-            <span class="game-card__cta" aria-hidden="true">플레이하기 <span class="game-card__arrow">→</span></span>
+            <span class="game-card__cta" aria-hidden="true">플레이 <span class="game-card__arrow">→</span></span>
           </div>
         </div>
       </article>

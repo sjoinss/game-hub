@@ -56,14 +56,6 @@
     if (game.description) desc.textContent = game.description;
     else desc.remove();
 
-    var tags = node.querySelector(".game-card__tags");
-    (game.tags || []).forEach(function (tag) {
-      var li = document.createElement("li");
-      li.className = "tag";
-      li.textContent = tag;
-      tags.appendChild(li);
-    });
-    if (!tags.children.length) tags.remove();
 
     var platform = node.querySelector(".game-card__platform");
     if (game.platform) platform.textContent = game.platform;
