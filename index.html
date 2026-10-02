@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>웹게임 모음</title>
+  <meta name="description" content="Claude와 함께 만든 브라우저 게임 모음. 설치 없이 바로 플레이할 수 있어요.">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#games">게임 목록으로 바로가기</a>
+
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">Game Collection</p>
+      <h1 class="page-title">웹게임 모음</h1>
+      <p class="page-lead">Claude와 함께 만든 브라우저 게임 모음이에요. 설치 없이 바로 플레이할 수 있어요.</p>
+    </div>
+  </header>
+
+  <main id="games" class="container" tabindex="-1">
+    <div class="section-head">
+      <h2 class="section-title">전체 게임</h2>
+      <p class="section-count" id="game-count" aria-live="polite"></p>
+    </div>
+
+    <ul class="game-grid" id="game-list"></ul>
+
+    <!-- 등록된 게임이 없을 때 -->
+    <div class="state" id="empty-state" hidden>
+      <p class="state-title">아직 등록된 게임이 없어요</p>
+      <p class="state-text"><code>games.js</code>에 게임 정보를 추가하면 여기에 나타나요.</p>
+    </div>
+
+    <noscript>
+      <div class="state">
+        <p class="state-title">게임 목록을 표시하려면 JavaScript가 필요해요</p>
+        <p class="state-text">브라우저 설정에서 JavaScript를 켠 뒤 새로고침해 주세요.</p>
+      </div>
+    </noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>각 게임은 GitHub Pages로 배포되어 있어요. 플레이 버튼을 누르면 새 탭에서 열려요.</p>
+    </div>
+  </footer>
+
+  <!-- 카드 템플릿: main.js가 복제해서 채웁니다 -->
+  <template id="game-card-template">
+    <li class="game-card">
+      <article class="game-card__inner">
+        <div class="game-card__media">
+          <img class="game-card__img" loading="lazy" decoding="async" width="800" height="500" alt="">
+          <div class="game-card__fallback" aria-hidden="true">
+            <span class="game-card__fallback-emoji"></span>
+            <span class="game-card__fallback-text">미리보기를 불러오지 못했어요</span>
+          </div>
+        </div>
+        <div class="game-card__body">
+          <h3 class="game-card__title">
+            <a class="game-card__link" target="_blank" rel="noopener">
+              <span class="game-card__name"></span>
+              <span class="visually-hidden"> (새 탭에서 열림)</span>
+            </a>
+          </h3>
+          <p class="game-card__desc"></p>
+          <ul class="game-card__tags" aria-label="태그"></ul>
+          <div class="game-card__footer">
+            <span class="game-card__platform"></span>
+            <span class="game-card__cta" aria-hidden="true">플레이하기 <span class="game-card__arrow">→</span></span>
+          </div>
+        </div>
+      </article>
+    </li>
+  </template>
+
+  <script src="games.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
