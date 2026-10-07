@@ -30,6 +30,15 @@ window.GAMES = [
     emoji: "🫙",
   },
   {
+    title: "숫자 던전",
+    url: "https://sjoinss.github.io/number-dungeon/",
+    image: "images/number-dungeon.png",
+    imageAlt: "숫자 5인 주인공 옆에 숫자 3 슬라임, 8 유령, 숫자를 모르는 보스가 방으로 이어진 퍼즐 화면",
+    description: "나보다 작은 숫자를 흡수해 보스를 잡는 퍼즐",
+    platform: "PC · 모바일",
+    emoji: "🔢",
+  },
+  {
     title: "케이크 타이쿤",
     url: "https://sjoinss.github.io/cake_simulator/",
     image: "images/cake-tycoon.jpg",
