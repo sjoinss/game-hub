@@ -21,6 +21,15 @@ window.GAMES = [
     emoji: "🐥",
   },
   {
+    title: "도트 젤리 소팅",
+    url: "https://sjoinss.github.io/dot-jelly-sort/",
+    image: "images/dot-jelly-sort.png",
+    imageAlt: "같은 색 도트 젤리가 병 안에서 이어 붙어 쌓인 소팅 퍼즐 화면",
+    description: "같은 젤리끼리 한 병에 모으는 소팅 퍼즐",
+    platform: "PC · 모바일",
+    emoji: "🫙",
+  },
+  {
     title: "케이크 타이쿤",
     url: "https://sjoinss.github.io/cake_simulator/",
     image: "images/cake-tycoon.jpg",
