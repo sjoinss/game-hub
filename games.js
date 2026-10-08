@@ -12,6 +12,15 @@
  */
 window.GAMES = [
   {
+    title: "파쇄 시뮬레이터",
+    url: "https://sjoinss.github.io/shredder-tycoon/",
+    image: "images/pashe.jpg",
+    imageAlt: "파쇄 시뮬레이터 플레이 화면",
+    description: "파쇄를 하며 돈을 벌고 파쇄기를 업그레이드 하는 게임",
+    platform: "PC · 모바일",
+    emoji: "📃",
+  },
+  {
     title: "점프점프",
     url: "https://sjoinss.github.io/jumpjump/",
     image: "images/jumpjump.jpg",
