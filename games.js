@@ -11,6 +11,15 @@
  *   emoji       이미지가 없거나 불러오지 못했을 때 보여줄 이모지 (선택)
  */
 window.GAMES = [
+    {
+      title: "햄버거 공장",
+      url: "https://sjoinss.github.io/hamburger-factory/",
+      image: "images/hamburger-factory.jpg",
+      imageAlt: "햄버거 공장 플레이 화면",
+      description: "행버거를 만드는 공장을 운영하는 게임",
+      platform: "PC · 모바일",
+      emoji: "🍔",
+  },
   {
     title: "파쇄 시뮬레이터",
     url: "https://sjoinss.github.io/shredder-tycoon/",
