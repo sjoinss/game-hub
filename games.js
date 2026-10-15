@@ -11,6 +11,15 @@
  *   emoji       이미지가 없거나 불러오지 못했을 때 보여줄 이모지 (선택)
  */
 window.GAMES = [
+  {
+    title: "야간 근무 수칙",
+    url: "https://sjoinss.github.io/night-shift-rules/",
+    image: "images/night-shift-rules.jpg",
+    imageAlt: "LCD 시계가 03:17을 가리키는 어두운 화면에 '야간 근무 수칙' 제목",
+    description: "상가 경비실에서 수칙을 지키며 아침을 버티는 공포 게임",
+    platform: "PC · 모바일",
+    emoji: "🕯️",
+  },
     {
       title: "햄버거 공장",
       url: "https://sjoinss.github.io/hamburger-factory/",
